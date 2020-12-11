@@ -29,12 +29,16 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
+-React JS is a library that whos main focus is to help us build UI and interact with the DOM. When building more interactive UI's it's important to update your UI as information changes. Reach.js helps us by only re-rendering what has been changed by comparing the React.js "virtual dom" against the real DOM to determine if a re-render is necessary.
 
 1. Describe component state.
+- Component state is information or "slice of state" that the particular component monitors. you generally only want the state high enough so that it can "hydrate" all the components it needs. In otherwords you don't need to slap all state into the App component.
 
 1. Describe props.
+- Props, or properties is just a big ol' ball of information. By passing this ball from partent to child and destructuring from it you can be sure that data you need will be available whereever it's call as long as you pass it down the chain.
 
 1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+- Side effects are anything outside the area/function you're working in. For instance a "pure" function produces the exact same processes without "side effects" changing the data within.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
