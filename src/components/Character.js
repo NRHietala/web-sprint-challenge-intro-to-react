@@ -10,19 +10,24 @@ function Character(props) {
   align-items:center;
   justify-content: space-around;
   font-size: 2rem;
-  border: 2px solid green;
+  border: 4px solid rgba(76, 229, 219, .75);
   width: 250px;
-  min-height: 200px;
+  min-height: 300px;
   padding: 5px 0;
   margin: 10px 0;
-  background: rgba(229, 219, 76, .85);
+  background: rgba(229, 219, 76, 1);
   border-radius: 15px;
 
   .avatar {
     width: 240px;
     border-radius: 15px;
-    border: 1px black solid;
-    border: 
+    border: 1px black solid; 
+  }
+
+  h3 {
+    padding: 3px 0;
+    color:#f675da;
+    text-align:center;
   }
   
   `

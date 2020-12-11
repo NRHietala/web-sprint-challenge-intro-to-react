@@ -13,9 +13,9 @@ function Header() {
   h1 {
     text-align:center;
     font-size: 10rem;
-    padding: 20px;
-    color: seagreen;
-    text-shadow: 3px 3px gold;
+    padding-bottom: 10%;
+    color: #01b4c6;
+    text-shadow: 2px 3px #97ce4c;
     
   }
   `
