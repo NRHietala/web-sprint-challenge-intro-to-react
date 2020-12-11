@@ -1,12 +1,22 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import './App.css';
+import styled from 'styled-components';
 import Header from './components/Header';
-// import Gallery from './components/Gallery';
-// import Footer from './components/Footer';
+import Gallery from './components/Gallery';
+import Footer from './components/Footer';
 
 const App = () => {
-  const [ charData, setCharData ] = useState([])
+  const [ charData, setCharData ] = useState([]);
+
+  const StyledApp = styled.div`
+    .container {
+      display:flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      justify-content: space-between;
+      box-sizing: border-box;
+    }
+  `
 
   useEffect(()=> {
     axios
@@ -27,9 +37,11 @@ const App = () => {
   *********************/
 
   return (
-    <div className="App">
-      <Header/>
-    </div>
+    <StyledApp className="container">
+      <Header />
+      <Gallery characters={charData}/>
+      <Footer />
+    </StyledApp>
   );
 }
 
