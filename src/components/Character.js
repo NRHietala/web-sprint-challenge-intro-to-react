@@ -15,7 +15,7 @@ function Character(props) {
   min-height: 300px;
   padding: 5px 0;
   margin: 10px 0;
-  background: rgba(229, 219, 76, 1);
+  background: rgba(229, 219, 76, .80);
   border-radius: 15px;
 
   .avatar {

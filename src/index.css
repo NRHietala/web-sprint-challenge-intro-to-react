@@ -53,11 +53,10 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-image: url('https://www.teahub.io/photos/full/12-124678_rick-and-morty-background-no6-by-jurokoo-data.jpg');
+  background-image: url('https://cdn.wallpapersafari.com/53/72/cMIO9o.jpg');
   background-size: cover;
   background-position:center;
   background-repeat: no-repeat;
-  min-height: 100vh;
 }
 
 h1 {
