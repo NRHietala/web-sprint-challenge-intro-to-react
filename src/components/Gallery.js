@@ -5,8 +5,16 @@ import Character from './Character';
 function Gallery(props) {
   const { characters } = props;
 
+  const StyledGallery = styled.div `
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items:center;
+    align-content: space-around;
+  `
+
   return (
-    <div className="gallery">
+    <StyledGallery className="gallery">
       {
       characters.map(toon => (
         <Character
@@ -14,7 +22,7 @@ function Gallery(props) {
         character={toon}
         />
       ))}   
-    </div>
+    </StyledGallery>
   )
 }
 
