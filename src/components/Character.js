@@ -18,6 +18,11 @@ function Character(props) {
   background: rgba(229, 219, 76, .80);
   border-radius: 15px;
 
+  &:hover {
+    transform: scale(1.1);
+    transition: all .5s ease-in-out;
+  }
+
   .avatar {
     width: 240px;
     border-radius: 15px;
@@ -33,6 +38,8 @@ function Character(props) {
   .status {
     color: ${character.status === 'Alive' ? '#2f9331' : '#e64358'}
   }
+
+  transition:all .5s ease-in-out;
   
   `
 
