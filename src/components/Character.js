@@ -26,8 +26,12 @@ function Character(props) {
 
   h3 {
     padding: 3px 0;
-    color:#f675da;
+    color:#01b4c6;
     text-align:center;
+  }
+
+  .status {
+    color: ${character.status === 'Alive' ? '#2f9331' : '#e64358'}
   }
   
   `
@@ -40,7 +44,8 @@ function Character(props) {
       />
       <h3>{character.name}</h3>
       <h4>{character.species}</h4>
-      <h4>{character.status}</h4>
+      <h4>{character.gender}</h4>
+      <h4 className="status">{character.status}</h4>
     </StyledCharacter>
   )
 }

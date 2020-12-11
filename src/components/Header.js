@@ -13,7 +13,6 @@ function Header() {
   h1 {
     text-align:center;
     font-size: 10rem;
-    padding-bottom: 10%;
     color: #01b4c6;
     text-shadow: 2px 3px #97ce4c;
     
@@ -23,6 +22,7 @@ function Header() {
   return (
     <StyledHeader className="header">
       <h1>Rick and Morty</h1>
+      <h1>Cast</h1>
     </StyledHeader>
   )
 }

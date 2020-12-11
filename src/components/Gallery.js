@@ -11,6 +11,8 @@ function Gallery(props) {
     justify-content: space-between;
     align-items:center;
     align-content: space-around;
+    width: 80%;
+    margin: auto;
   `
 
   return (
